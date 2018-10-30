@@ -2,7 +2,7 @@ import os
 
 # Django settings for ribbit project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -13,6 +13,8 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 LOGIN_URL = '/'
 
 MANAGERS = ADMINS
+
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
