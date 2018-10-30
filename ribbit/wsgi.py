@@ -22,6 +22,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ribbit.settings")
 # setting points here.
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(application)
 
 # Apply WSGI middleware here.
 # from helloworld.wsgi import HelloWorldApplication
